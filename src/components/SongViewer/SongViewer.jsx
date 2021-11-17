@@ -1,7 +1,9 @@
 import React,{Component} from 'react';
 import axios from "axios";
 import "./SongViewer.css";
+// import {useState} from 'react';
 
+// const [searchTerm,setSearchTerm]=useState('')
 
 class  SongViewer extends Component {
     constructor(props) {
@@ -24,7 +26,11 @@ class  SongViewer extends Component {
             console.log(error)
          }
      }
+
+
     render() { 
+        // .filter((user)=>{if(searchTerm==""){return user}
+        // else if(user.toLowerCase().includes(searchTerm.toLowerCase())){return user}})
         let renderedSongs=this.state.users.map((user)=>{
     return(
         <tr>
@@ -37,9 +43,12 @@ class  SongViewer extends Component {
         </tr>
     )
     })
-
+ //onChange={event=>{setSearchTerm(event.target.value)}}
         return ( 
             <div className="container-fluid2">
+            <div className="search">
+            <input type="text" placeholder="Search..." />
+            </div>
             <table>
             <tr>
             <th>ID</th>
