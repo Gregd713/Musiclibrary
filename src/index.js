@@ -1,7 +1,6 @@
 import 'bootstrap';
 import 'bootstrap/dist/css/bootstrap.css';
 import 'bootstrap/dist/js/bootstrap.js';
-import Dropdown from 'react-dropdown';
 import React from "react";
 import reactDom from "react-dom";
 import App from './components/App';

@@ -2,7 +2,6 @@ import React,{Component} from 'react';
 import './App.css'
 import NavBar from './Navbar/Navbar';
 import Footer from './Footer/Footer';
-import axios from 'axios';
 import SongViewer from './SongViewer/SongViewer';
 
 
