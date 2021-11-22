@@ -15,7 +15,7 @@ class  SongViewer extends Component {
     }
      async fetchSongs(){
          try{
-             let response = await axios.get("http://www.devcodecampmusiclibrary.com/api/music")
+             let response = await axios.get("http://localhost:5000/api/songs")
              console.log(response.data)
              this.setState({
                 users: response.data
