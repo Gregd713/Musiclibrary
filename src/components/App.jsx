@@ -3,6 +3,7 @@ import './App.css'
 import NavBar from './Navbar/Navbar';
 import Footer from './Footer/Footer';
 import SongViewer from './SongViewer/SongViewer';
+import CreateSong from './AddSong/AddSong';
 
 
 
@@ -19,7 +20,8 @@ import SongViewer from './SongViewer/SongViewer';
              <div className="container-fluid">
                  <NavBar/>
                  <SongViewer/>
-                 <Footer/>
+                 <CreateSong/>
+                 <Footer/>   
              </div>
            );
      }
